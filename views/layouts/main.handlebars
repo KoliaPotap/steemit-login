@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>YOUR TITLE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+<style>
+img
+{
+    max-width: 400px;
+    max-height: 400px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#stil{}
+</style>
+
+  </head>
+  <body>
+
+<nav id="navigationNO" class="navbar navbar-transparent">
+  <div class="container-fluid">
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><div class="button button1" onClick="OnClickLogin();" id="Login"><span class="glyphicon glyphicon-log-in"></span> Login</div>
+          <div id="SOCbutto" style="color: DodgerBlue;"></div><div id="LOgoi"></div></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<script>
+
+</script>
+
+
+      </div>
+    </nav>
+
+    <div class="container">
+      {{{body}}}
+    </div>
+  </body>
+</html>
+<script>
+// WHEN YOU LOG IN login button will become log OUT, because server got his us.displayName   (USER DATA)
+ var user = "{{us.displayName}}";
+var tlogO = '<a href="/logout"><div class="button button1" ><span class="glyphicon glyphicon-log-in"></span> LogOUT </div></a>';
+var tlogO4 = '<a href="/steemit/login" ><img style="width:40px;" src="/img/steemit.png"></a>';
+var allBUtt =  tlogO4;
+function OnClickLogin(){
+  document.getElementById("Login").remove();
+document.getElementById("SOCbutto").innerHTML = allBUtt;
+}
+if (user.length > 1) {
+  document.getElementById("Login").remove();
+  document.getElementById("SOCbutto").remove();
+
+document.getElementById("LOgoi").innerHTML = tlogO;
+}
+
+if(document.URL.includes("?access_token")){window.location.hash = '';}
+</script>

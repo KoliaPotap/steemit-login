@@ -1,0 +1,27 @@
+{
+  "name": "steemconnect login",
+  "version": "1.0.0",
+  "description": "Steem connect login implement on your website",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "deploy": "gcloud app deploy"
+  },
+  "author": "Kolia Potapenko",
+  "Thanks to": "Brad Traversy",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.1",
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-beta.3",
+    "crypto": "^1.0.1",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "json": "^9.0.6",
+    "method-override": "^2.3.7",
+    "passport": "^0.4.0",
+    "passport-steemconnect": "^1.1.0"
+  }
+}
