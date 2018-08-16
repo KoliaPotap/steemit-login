@@ -1,6 +1,6 @@
 # Steemit login / steemconnect login option to website
 
-
+made by https://steemit.com/@doelist
 ### Version
 1.0.0
 
