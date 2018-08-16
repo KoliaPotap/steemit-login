@@ -1,5 +1,5 @@
-# RedUsers
-Simple user management app using Node.js and Redis
+# Steemit login / steemconnect login option to website
+
 
 ### Version
 1.0.0
